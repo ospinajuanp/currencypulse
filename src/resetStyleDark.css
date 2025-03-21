@@ -6,7 +6,10 @@
   }
   
   html, body {
+    box-sizing: border-box;
     height: 100%;
+    margin: 0;
+    padding: 0;
   }
   
   /* TEMA MODERNO OSCURO */
@@ -54,7 +57,7 @@
   /* Formularios: entradas y áreas de texto */
   input[type="text"],
   input[type="email"],
-  textarea {
+  textarea, select {
     background-color: #1e1e1e;
     border: 1px solid #333;
     padding: 0.5rem;
@@ -92,3 +95,20 @@
     text-align: left;
   }
   
+
+  select::-webkit-scrollbar {
+    width: 8px; /* Ancho del scrollbar */
+  }
+  
+  select::-webkit-scrollbar-track {
+    background: #1e1e1e; /* Color del fondo del scrollbar */
+  }
+  
+  select::-webkit-scrollbar-thumb {
+    background: #00bfff; /* Color del "thumb" (barra que se mueve) */
+    border-radius: 10px;
+  }
+  
+  select::-webkit-scrollbar-thumb:hover {
+    background: #008cff; /* Color cuando pasas el mouse */
+  }
